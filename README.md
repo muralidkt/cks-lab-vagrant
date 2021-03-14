@@ -7,7 +7,7 @@ This is a lab environment for the CKA / CKS Certification course. Please follow 
   | master-01   | 192.168.10.11 |
   | worker-01   | 192.168.10.13 |
   | worker-02   | 192.168.10.14 | 
-## Prerequesites
+## Prerequisites
 - Vagrant : Vagrant is a tool from HashiCorp for building and distributing development environments. You can read more about the tool in the below link. Please download vagrant from [here](https://www.vagrantup.com/downloads) and follow the [instructions](https://learn.hashicorp.com/tutorials/vagrant/getting-started-install) for installing vagrant in your machine.
     - Website: https://www.vagrantup.com/
     - Source: https://github.com/hashicorp/vagrant
