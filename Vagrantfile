@@ -47,6 +47,7 @@ Vagrant.configure("2") do |config|
         worker1.vm.hostname = "worker-01"
         worker1.vm.network "private_network", ip: WORKER_01_IP
         worker1.vm.provision :shell, path: "provision-worker.sh"
+        worker1.vm.provision :shell, path: "token.sh"
     end
 
 end
