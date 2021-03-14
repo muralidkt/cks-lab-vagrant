@@ -65,7 +65,3 @@ apt-get update
 apt-get install -y kubelet=${KUBE_VERSION}-00 kubeadm=${KUBE_VERSION}-00 kubectl=${KUBE_VERSION}-00
 systemctl daemon-reload
 systemctl enable kubelet && systemctl start kubelet
-sleep 20
-cp /vagrant/token.sh /root/token.sh
-chmod 700 /root/token.sh
-./root/token.sh
