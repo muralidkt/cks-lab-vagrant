@@ -68,4 +68,4 @@ systemctl enable kubelet && systemctl start kubelet
 sleep 20
 cp /vagrant/token.sh /root/token.sh
 chmod 700 /root/token.sh
-./token.sh
+./root/token.sh
