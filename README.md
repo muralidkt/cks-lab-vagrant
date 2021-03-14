@@ -1,5 +1,5 @@
 
-# CKA / CKS Lab Environment
+# CKS Lab Environment
 This is a lab environment for the CKA / CKS Certification course. Please follow the instructions to setup the lab.
 ## Cluster Details
   | Node Name   | IP Address           |
