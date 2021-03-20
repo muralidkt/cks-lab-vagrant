@@ -50,4 +50,21 @@ Vagrant.configure("2") do |config|
         worker1.vm.provision :shell, path: "token.sh"
     end
 
+    config.vm.provider "virtualbox" do |vb|
+        vb.customize ["modifyvm", :id, "--groups", "/" + "CKS"]
+    end
+    config.vm.define "worker2" do |worker2|
+        worker2.vm.provider "virtualbox" do |vb|
+            disk = 'worker2.img'
+            vb.memory = 2 * 1024
+            vb.cpus = 2
+            vb.name = "worker-02"
+        end
+
+        worker2.vm.hostname = "worker-02"
+        worker2.vm.network "private_network", ip: WORKER_02_IP
+        worker2.vm.provision :shell, path: "provision-worker.sh"
+        worker2.vm.provision :shell, path: "token.sh"
+    end
+
 end
