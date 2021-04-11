@@ -16,7 +16,7 @@ This is a lab environment for the CKA / CKS Certification course. Please follow 
 
 - VritualBox : VirtualBox is a general-purpose virtualization tool. You can download virtualbox from [here](https://www.virtualbox.org/wiki/Downloads) and install in your machine.
 
-## Instruction run the lab
+## Instruction to run the lab
 Once you install both Vagrant and VirtualBox.
 
 Clone this repository
