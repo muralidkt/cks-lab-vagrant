@@ -58,6 +58,7 @@ Current machine states:
 
 master1                   running (virtualbox)
 worker1                   running (virtualbox)
+worker2                   running (virtualbox)
 ````
 SSH to the master node
 ````
@@ -78,6 +79,7 @@ student@master-01:~$ kubectl get node
 NAME        STATUS   ROLES                  AGE    VERSION
 master-01   Ready    control-plane,master   3m4s   v1.20.2
 worker-01   Ready    <none>                 79s    v1.20.2
+worker-02   Ready    <none>                 80s    v1.20.2
 ````
 List the pods in the kube-system namespace
 ````
